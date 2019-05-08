@@ -115,7 +115,7 @@ for i in range(12):
                 if cell.find('button', attrs={'class': 'rec-availability-date'}):
                     availability = cell.find('button', attrs={'class': 'rec-availability-date'})
                     #print(availability.text)
-                    if(availability.text != "A"):
+                    if availability.text != "A" and availability.text != "W":
                         availabilityTable_Row.append('X')
                     else:
                         availabilityTable_Row.append(availability.text)
@@ -130,7 +130,7 @@ for i in range(12):
                 if cell.find('button', attrs={'class': 'rec-availability-date'}):
                     availability = cell.find('button', attrs={'class': 'rec-availability-date'})
                     #print(availability.text)
-                    if (availability.text != 'A'):
+                    if availability.text != "A" and availability.text != "W":
                         availabilityTable[site_Count].append('X')
                     else:
                         availabilityTable[site_Count].append(availability.text)

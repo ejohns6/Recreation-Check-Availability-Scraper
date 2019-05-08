@@ -22,3 +22,4 @@ To-Do:
 -Will Change so that this does not need to be done
 -Will Change so that this can be changed on the argument line or input
 -User input on which place to look for a specific camp site
+-Error for walkin. Due to it changes format after the first 10 days
